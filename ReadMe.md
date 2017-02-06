@@ -29,44 +29,44 @@ The Postfix Converter will tokenize the expression string, pass it to the Conver
 ### Test Plan
 
  1. Attempt without spaces
-    - Postfix: 22+
-    - Expected: 2 + 2
-    - Result: 2 + 2
+    - **Postfix**: `22+`
+    - **Expected**: `2 + 2`
+    - **Result**: `2 + 2`
 
  2. Attempt with spaces
-    - Postfix: 2 2 +
-    - Expected: 2 + 2
-    - Result: 2 + 2
+    - **Postfix**: `2 2 +`
+    - **Expected**: `2 + 2`
+    - **Result**: `2 + 2`
 
  3. Attempt with too many operands
-    - Postfix: 123+
-    - Expected: Error - Unbalanced equation.
-    - Result: Error - Unbalanced equation.
+    - **Postfix**: `123+`
+    - **Expected**: Error - `Unbalanced equation.`
+    - **Result**: Error - `Unbalanced equation.`
 
  4. Attempt with too many operators
-    - Postfix: 12+*
-    - Expected: Error - Unbalanced equation.
-    - Result: Error - Unbalanced equation.
+    - **Postfix**: `12+*`
+    - **Expected**: Error - `Unbalanced equation.`
+    - **Result**: Error - `Unbalanced equation.`
 
  5. Attempt with invalid characters
-    - Postfix: 3&4
-    - Expected: Error - Invalid expression.
-    - Result: Error - Invalid expression.
+    - **Postfix**: `3&4`
+    - **Expected**: Error - `Invalid expression.`
+    - **Result**: Error - `Invalid expression.`
 
  6. Attempt with invalid format
-    - Postfix: +12
-    - Expected: Error - Invalid expression.
-    - Result: Error - Invalid expression.
+    - **Postfix**: `+12`
+    - **Expected**: Error - `Invalid expression.`
+    - **Result**: Error - `Invalid expression.`
 
  7. Attempt with invalid format
-    - Postfix: 1+2
-    - Expected: Error - Invalid expression.
-    - Result: Error - Invalid expression.
+    - **Postfix**: `1+2`
+    - **Expected**: Error - `Invalid expression.`
+    - **Result**: Error - `Invalid expression.`
  
  8. Attempt with a complex expression.
-    - Postfix: 723*5+842/-*-
-    - Expected: 7 - (2 * 3 + 5) * (8 - 4 / 2)
-    - Result: 7 - (2 * 3 + 5) * (8 - 4 / 2)
+    - **Postfix**: `723*5+842/-*-`
+    - **Expected**: `7 - (2 * 3 + 5) * (8 - 4 / 2)`
+    - **Result**: `7 - (2 * 3 + 5) * (8 - 4 / 2)`
 
 
 
