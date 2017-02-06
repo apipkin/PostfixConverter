@@ -1,7 +1,7 @@
 # Postfix Converter
 
-This Postfix Converter will correctly solve any expression given only numbers, operators (`+`, `-`, `*`, `/`), and groups (`()`, `{}`, `[]`).
-The Postfix Converter will tokenize the expression string, pass it to the Converter and return the results.
+This Postfix Converter will correctly convert any postfix expression given only numbers, operators (`+`, `-`, `*`, `/`).
+The Postfix Converter will tokenize the expression string, pass it to the Converter and return the resulting infix expression.
 
 ## Getting Started
 
