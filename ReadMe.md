@@ -21,6 +21,7 @@ The Postfix Converter will tokenize the expression string, pass it to the Conver
 
 ## Testing
 
+### Unit Tests
  - *test* `npm test`
  - *test coverage* `npm run test:cover`
  - *test coverage in browser* `test:cover:browser`
@@ -58,10 +59,14 @@ The Postfix Converter will tokenize the expression string, pass it to the Conver
     - Result: Error - Invalid expression.
 
  7. Attempt with invalid format
-  - Postfix: 1+2
-  - Expected: Error - Invalid expression.
-  - Result: Error - Invalid expression.
-
+    - Postfix: 1+2
+    - Expected: Error - Invalid expression.
+    - Result: Error - Invalid expression.
+ 
+ 8. Attempt with a complex expression.
+    - Postfix: 723*5+842/-*-
+    - Expected: 7 - (2 * 3 + 5) * (8 - 4 / 2)
+    - Result: 7 - (2 * 3 + 5) * (8 - 4 / 2)
 
 
 
