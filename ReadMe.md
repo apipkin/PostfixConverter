@@ -58,9 +58,9 @@ The Postfix Converter will tokenize the expression string, pass it to the Conver
     - Result: Error - Invalid expression.
 
  7. Attempt with invalid format
- - Postfix: 1+2
- - Expected: Error - Invalid expression.
- - Result: Error - Invalid expression.
+  - Postfix: 1+2
+  - Expected: Error - Invalid expression.
+  - Result: Error - Invalid expression.
 
 
 
