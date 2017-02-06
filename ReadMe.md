@@ -1,6 +1,6 @@
 # Postfix Converter
 
-This Postfix Converter will correctly convert any postfix expression given only numbers, operators (`+`, `-`, `*`, `/`).
+This Postfix Converter will correctly convert any postfix expression given only numbers and operators (`+`, `-`, `*`, `/`).
 The Postfix Converter will tokenize the expression string, pass it to the Converter and return the resulting infix expression.
 
 ## Getting Started
@@ -27,6 +27,43 @@ The Postfix Converter will tokenize the expression string, pass it to the Conver
 
 ### Test Plan
 
+ 1. Attempt without spaces
+    - Postfix: 22+
+    - Expected: 2 + 2
+    - Result: 2 + 2
+
+ 2. Attempt with spaces
+    - Postfix: 2 2 +
+    - Expected: 2 + 2
+    - Result: 2 + 2
+
+ 3. Attempt with too many operands
+    - Postfix: 123+
+    - Expected: Error - Unbalanced equation.
+    - Result: Error - Unbalanced equation.
+
+ 4. Attempt with too many operators
+    - Postfix: 12+*
+    - Expected: Error - Unbalanced equation.
+    - Result: Error - Unbalanced equation.
+
+ 5. Attempt with invalid characters
+    - Postfix: 3&4
+    - Expected: Error - Invalid expression.
+    - Result: Error - Invalid expression.
+
+ 6. Attempt with invalid format
+    - Postfix: +12
+    - Expected: Error - Invalid expression.
+    - Result: Error - Invalid expression.
+
+ 7. Attempt with invalid format
+    - Postfix: 1+2
+    - Expected: Error - Invalid expression.
+    - Result: Error - Invalid expression.
+
+
+
 
 
 ## UML Diagram
@@ -34,6 +71,7 @@ The Postfix Converter will tokenize the expression string, pass it to the Conver
 
 
 ## Lessons learned
+
 
 
 ## Possible Improvements
