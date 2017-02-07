@@ -70,7 +70,7 @@ The Postfix Converter will tokenize the expression string, pass it to the Conver
 
 
 ## UML Diagram
-![UML Diagram]()
+![UML Diagram](https://image.ibb.co/gqTSaa/Screen_Shot_2017_02_06_at_7_12_27_PM.png)
 
 
 ## Lessons learned
